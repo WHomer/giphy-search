@@ -1,0 +1,9 @@
+<div class="gif-block">
+  <% @gifs.each do |gif| %>
+    <ul class="gif">
+      <li><%= gif.id %></li>
+      <li><%= gif.url %></li>
+      <li><img src="<%= gif.url %>" alt="<%= gif.slug %>"></li>
+    </ul>
+  <% end %>
+</div>
